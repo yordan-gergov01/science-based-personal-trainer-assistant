@@ -58,20 +58,15 @@ with st.sidebar:
     
     st.markdown("---")
     
-    st.markdown("### 📝 Quick Questions")
-    examples = [
-        "What's optimal protein intake?",
-        "Best chest exercises?",
-        "How to structure a PPL split?",
-        "Should I do cardio on a bulk?",
-        "Which supplements work?",
-        "How does sleep affect gains?"
-    ]
-    
-    for example in examples:
-        if st.button(example, key=f"ex_{hash(example)}", use_container_width=True):
-            st.session_state.messages.append({"role": "user", "content": example})
-            st.rerun()
+    st.markdown("### 📝 Example Questions")
+    st.markdown("""
+    - What's optimal protein intake?
+    - Best chest exercises?
+    - How to structure a PPL split?
+    - Should I do cardio on a bulk?
+    - Which supplements work?
+    - How does sleep affect gains?
+    """)
     
     st.markdown("---")
     
