@@ -425,3 +425,145 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
 2026-02-15 11:03:47,583 - src.rag_chain - INFO - Question: How does sleep affect muscle recovery and growth?
 2026-02-15 11:03:48,087 - src.rag_chain - INFO - Question: What's the difference between powerlifting and bodybuilding training?
 2026-02-15 11:03:48,589 - src.rag_chain - INFO - Question: How do I calculate my maintenance calories?
+2026-02-15 11:05:33,916 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 11:05:33,918 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 11:05:33,919 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 11:05:33,920 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 11:05:33,921 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 11:05:33,921 - src.vector_store - INFO - Loading FAISS index from d:\Personal Trainer Assistant\notebooks\..\faiss_index
+2026-02-15 11:05:35,056 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 11:05:37,558 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 11:05:37,559 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 11:05:37,560 - faiss.loader - INFO - Loading faiss.
+2026-02-15 11:05:37,637 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 11:05:37,679 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 11:06:19,591 - src.rag_chain - INFO - Question: What's the optimal daily protein intake for muscle growth?
+2026-02-15 11:06:20,807 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:21,334 - src.rag_chain - INFO - Question: How should I structure my training split for hypertrophy?
+2026-02-15 11:06:22,371 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:22,876 - src.rag_chain - INFO - Question: What are the best exercises for chest development?
+2026-02-15 11:06:23,817 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:24,321 - src.rag_chain - INFO - Question: Should I do cardio while bulking and how much?
+2026-02-15 11:06:25,252 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:25,758 - src.rag_chain - INFO - Question: How to prevent common training injuries?
+2026-02-15 11:06:26,752 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:27,257 - src.rag_chain - INFO - Question: Which supplements are actually worth taking?
+2026-02-15 11:06:28,378 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:28,884 - src.rag_chain - INFO - Question: Explain the science of muscle protein synthesis
+2026-02-15 11:06:29,946 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:30,452 - src.rag_chain - INFO - Question: How does sleep affect muscle recovery and growth?
+2026-02-15 11:06:31,348 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:31,852 - src.rag_chain - INFO - Question: What's the difference between powerlifting and bodybuilding training?
+2026-02-15 11:06:32,959 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:06:33,465 - src.rag_chain - INFO - Question: How do I calculate my maintenance calories?
+2026-02-15 11:06:34,506 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:04,681 - src.rag_chain - INFO - Question: What's the optimal daily protein intake for muscle growth?
+2026-02-15 11:07:05,274 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:05,778 - src.rag_chain - INFO - Question: How should I structure my training split for hypertrophy?
+2026-02-15 11:07:07,084 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:07,588 - src.rag_chain - INFO - Question: What are the best exercises for chest development?
+2026-02-15 11:07:08,416 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:08,920 - src.rag_chain - INFO - Question: Should I do cardio while bulking and how much?
+2026-02-15 11:07:09,847 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:10,353 - src.rag_chain - INFO - Question: How to prevent common training injuries?
+2026-02-15 11:07:10,413 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-15 11:07:10,414 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-02-15 11:07:12,387 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:12,893 - src.rag_chain - INFO - Question: Which supplements are actually worth taking?
+2026-02-15 11:07:12,957 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-15 11:07:12,958 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-02-15 11:07:18,760 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:19,264 - src.rag_chain - INFO - Question: Explain the science of muscle protein synthesis
+2026-02-15 11:07:19,326 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-15 11:07:19,327 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-02-15 11:07:25,490 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:25,994 - src.rag_chain - INFO - Question: How does sleep affect muscle recovery and growth?
+2026-02-15 11:07:26,055 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-15 11:07:26,057 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-02-15 11:07:33,211 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:33,714 - src.rag_chain - INFO - Question: What's the difference between powerlifting and bodybuilding training?
+2026-02-15 11:07:33,776 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-15 11:07:33,778 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-02-15 11:07:41,831 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:07:42,334 - src.rag_chain - INFO - Question: How do I calculate my maintenance calories?
+2026-02-15 11:07:42,395 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-15 11:07:42,397 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-02-15 11:07:48,344 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:24:15,779 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 11:24:15,780 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 11:24:15,780 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 11:24:15,780 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 11:24:15,780 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 11:24:15,782 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 11:24:19,353 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 11:24:22,522 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 11:24:22,523 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 11:24:22,523 - faiss.loader - INFO - Loading faiss.
+2026-02-15 11:24:22,629 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 11:24:22,688 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 11:25:36,345 - src.rag_chain - INFO - Question: Hello, I want to ask something about my weight. How much calories are optimal for me with sedentary activity and poor sleep quality?
+2026-02-15 11:25:38,559 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:29:01,302 - src.rag_chain - INFO - Question: А какви упражнения мога да правя за гърди?
+2026-02-15 11:29:02,502 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:38:14,729 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 11:38:14,730 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 11:38:14,730 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 11:38:14,731 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 11:38:14,731 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 11:38:14,731 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 11:38:17,821 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 11:38:20,938 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 11:38:20,938 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 11:38:20,938 - faiss.loader - INFO - Loading faiss.
+2026-02-15 11:38:21,031 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 11:38:21,101 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 11:39:06,709 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 11:39:06,710 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 11:39:06,710 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 11:39:06,710 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 11:39:06,710 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 11:39:06,711 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 11:39:09,358 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 11:39:12,387 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 11:39:12,388 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 11:39:12,389 - faiss.loader - INFO - Loading faiss.
+2026-02-15 11:39:12,414 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 11:39:12,461 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 11:45:20,819 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 11:45:20,820 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 11:45:20,820 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 11:45:20,820 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 11:45:20,821 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 11:45:20,821 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 11:45:23,321 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 11:45:26,106 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 11:45:26,106 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 11:45:26,107 - faiss.loader - INFO - Loading faiss.
+2026-02-15 11:45:26,130 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 11:45:26,174 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 11:48:53,639 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 11:48:53,639 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 11:48:53,640 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 11:48:53,640 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 11:48:53,640 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 11:48:53,640 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 11:48:56,244 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 11:48:59,250 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 11:48:59,251 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 11:48:59,251 - faiss.loader - INFO - Loading faiss.
+2026-02-15 11:48:59,279 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 11:48:59,331 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 11:50:28,704 - src.rag_chain - INFO - Question: How to structure a PPL split?
+2026-02-15 11:50:30,553 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:51:15,767 - src.rag_chain - INFO - Question: What about range of motion?
+2026-02-15 11:51:16,846 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:52:16,823 - src.rag_chain - INFO - Question: What's optimal protein intake?
+2026-02-15 11:52:17,397 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 11:52:32,163 - src.rag_chain - INFO - Question: How does sleep affect gains?
+2026-02-15 11:52:33,243 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

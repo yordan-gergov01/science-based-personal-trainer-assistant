@@ -10,16 +10,18 @@ from src.config import MODULE_CATEGORIES
 
 # Page config
 st.set_page_config(
-    page_title="Personal Fitness Assistant",
+    page_title="Evidence-Based Fitness Coach",
     page_icon="💪",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
 # Header
 st.title("💪 Ask your personal coach (Q&A)")
 
-# Initialize
 @st.cache_resource(show_spinner=False)
 def initialize_chain():
     """Initialize chain (cached)"""
@@ -29,30 +31,51 @@ def initialize_chain():
 with st.spinner("Loading AI model..."):
     try:
         chain = initialize_chain()
-        st.success("✅ Ready to answer questions!")
     except Exception as e:
-        st.error(f"❌ Error loading chain: {e}")
+        st.error(f"Error loading chain: {e}")
         st.code(traceback.format_exc())
         st.stop()
 
+if len(st.session_state.messages) == 0:
+    st.info("👋 **How can I help you today?** Ask me anything about training, nutrition, recovery, or exercise science!")
+
 # Sidebar
 with st.sidebar:
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+    st.markdown("### 💡 What I Can Help With")
+    st.markdown("""
+    **🍗 Nutrition**  
+    Protein intake, meal timing, supplements
     
-    st.header("💡 Example Questions")
+    **🏋️ Training**  
+    Program design, exercise selection, splits
+    
+    **😴 Recovery**  
+    Sleep optimization, injury prevention
+    
+    **🧪 Science**  
+    Muscle growth mechanisms, metabolism
+    """)
+    
+    st.markdown("---")
+    
+    st.markdown("### 📝 Quick Questions")
     examples = [
-        "What is protein?",
-        "How much protein per day?",
-        "Best exercises for chest?"
+        "What's optimal protein intake?",
+        "Best chest exercises?",
+        "How to structure a PPL split?",
+        "Should I do cardio on a bulk?",
+        "Which supplements work?",
+        "How does sleep affect gains?"
     ]
     
     for example in examples:
-        if st.button(example, key=f"ex_{example[:20]}", use_container_width=True):
+        if st.button(example, key=f"ex_{hash(example)}", use_container_width=True):
             st.session_state.messages.append({"role": "user", "content": example})
             st.rerun()
     
-    if st.button("Clear Chat", use_container_width=True):
+    st.markdown("---")
+    
+    if st.button("🗑️ Clear Chat", use_container_width=True, type="secondary"):
         st.session_state.messages = []
         st.rerun()
 
@@ -71,8 +94,6 @@ if prompt := st.chat_input("Ask about training, nutrition, etc..."):
     with st.chat_message("assistant"):
         with st.spinner("🤔 Thinking..."):
             try:
-                from src.rag_chain import ask_question
-                
                 answer, sources = ask_question(chain, prompt, verbose=False)
                 
                 # Show answer
