@@ -1,0 +1,354 @@
+2026-02-14 13:43:14,889 - __main__ - INFO - Loading and processing PDFs...
+2026-02-14 13:43:14,889 - src.pdf_loader - INFO - Loading PDFs from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\PDFs
+2026-02-14 13:43:14,891 - src.pdf_loader - INFO - Found 35 PDF files
+2026-02-14 13:44:14,092 - src.pdf_loader - INFO - Loaded 2277 pages from 35 PDFs
+2026-02-14 13:44:14,093 - src.pdf_loader - INFO - Splitting documents: chunk_size=1000, overlap=200
+2026-02-14 13:44:14,313 - src.pdf_loader - INFO - Created 4699 chunks
+2026-02-14 13:44:14,318 - __main__ - INFO - Creating vector store with 4699 chunks
+2026-02-14 13:44:14,318 - __main__ - INFO - Cost: $0.00 (100% local)
+2026-02-14 13:44:34,733 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 13:44:41,038 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-14 13:44:41,887 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 13:44:41,930 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 13:50:13,879 - __main__ - INFO - Vector store created with 4699 embeddings
+2026-02-14 13:50:13,885 - __main__ - INFO - Total cost: $0.00
+2026-02-14 13:50:13,885 - __main__ - INFO - Saved to: C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 13:50:13,888 - __main__ - INFO - Testing query: 'What does Menno recommend for protein intake?'
+2026-02-14 13:50:13,993 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 13:50:57,721 - __main__ - INFO - Testing query: 'How to structure training split for hypertrophy?'
+2026-02-14 13:51:12,200 - __main__ - INFO - Testing query: 'Best exercises for muscle growth?'
+2026-02-14 13:51:13,295 - __main__ - INFO - Testing query: 'Supplements worth taking?'
+2026-02-14 13:51:14,243 - __main__ - INFO - Testing query: 'How much cardio while bulking?'
+2026-02-14 13:52:12,470 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 13:52:12,472 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 13:52:12,472 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 13:52:12,472 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 13:52:12,473 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 13:52:18,864 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 13:52:23,118 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-14 13:52:23,436 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 13:52:23,439 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 13:52:23,472 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 13:53:33,266 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 13:53:33,267 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 13:53:33,267 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 13:53:33,267 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 13:53:33,268 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 13:53:33,269 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 13:53:35,446 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 13:53:35,448 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 13:53:35,468 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 13:55:30,812 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 13:55:30,816 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 13:55:30,817 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 13:55:30,818 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 13:55:30,818 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 13:55:30,821 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 13:55:30,843 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: d0f45aa3-11b0-431e-a203-40fbc8a386e5)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2026-02-14 13:55:30,880 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-02-14 13:55:31,888 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 819761b2-dcbd-4720-9a05-3b5ab25b14a9)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2026-02-14 13:55:31,889 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2026-02-14 15:29:22,987 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 12b769b1-e289-42ba-ac7f-b0d06e48c3f2)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2026-02-14 15:29:23,124 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2026-02-14 15:29:27,259 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: d0dd00f1-a0f0-4cce-bee4-03459efbcefd)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2026-02-14 15:29:27,261 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2026-02-14 16:55:27,949 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 7569a56d-8846-45dd-a3b4-15b478bf64fd)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2026-02-14 16:55:28,256 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2026-02-14 16:55:36,404 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: abf45c10-42c3-4170-a5c3-033c41d6cc37)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2026-02-14 16:55:36,413 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 1523fb6a-e325-43f8-82ab-73442c50a238)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json
+2026-02-14 16:55:36,414 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-02-14 16:55:37,420 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 54fc4c23-f8dd-4099-82a1-30fcdc6bd63c)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json
+2026-02-14 16:55:37,421 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2026-02-14 18:30:55,825 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:30:55,911 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:30:55,994 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 18:30:56,029 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 18:30:58,969 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 18:30:58,971 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 18:30:58,972 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 18:30:58,972 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 18:30:58,973 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 18:31:01,206 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:31:01,209 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:31:01,225 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 18:36:41,962 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 18:36:41,962 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 18:36:41,962 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 18:36:41,963 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 18:36:41,963 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 18:36:49,757 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 18:36:53,201 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-14 18:36:53,409 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:36:53,412 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:36:53,439 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 18:36:53,442 - src.rag_chain - INFO - RAG chain ready
+2026-02-14 18:37:25,596 - src.rag_chain - INFO - Question: Hello!
+2026-02-14 18:37:46,927 - src.rag_chain - INFO - Question: What is protein?
+2026-02-14 18:50:00,164 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 18:50:00,165 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 18:50:00,165 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 18:50:00,166 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 18:50:00,166 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 18:50:05,014 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 18:50:08,189 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-14 18:50:08,342 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:50:08,344 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:50:08,372 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 18:50:08,377 - src.rag_chain - INFO - RAG chain ready
+2026-02-14 18:50:32,028 - src.rag_chain - INFO - Question: How to structure training for hypertrophy?
+2026-02-14 18:55:18,888 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 18:55:18,889 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 18:55:18,889 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 18:55:18,889 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 18:55:18,890 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 18:55:23,073 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 18:55:26,210 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-14 18:55:26,452 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:55:26,454 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:55:26,480 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 18:55:26,482 - src.rag_chain - INFO - RAG chain ready
+2026-02-14 18:57:59,597 - __main__ - INFO - Loading and processing PDFs...
+2026-02-14 18:57:59,597 - src.pdf_loader - INFO - Loading PDFs from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\PDFs
+2026-02-14 18:57:59,598 - src.pdf_loader - INFO - Found 35 PDF files
+2026-02-14 18:58:50,691 - src.pdf_loader - INFO - Loaded 2277 pages from 35 PDFs
+2026-02-14 18:58:50,692 - src.pdf_loader - INFO - Splitting documents: chunk_size=1000, overlap=200
+2026-02-14 18:58:50,897 - src.pdf_loader - INFO - Created 4699 chunks
+2026-02-14 18:58:50,900 - __main__ - INFO - Creating vector store with 4699 chunks
+2026-02-14 18:58:50,900 - __main__ - INFO - Cost: $0.00 (100% local)
+2026-02-14 18:58:55,236 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 18:58:58,313 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-14 18:58:58,921 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 18:58:58,976 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 19:03:47,650 - __main__ - INFO - Vector store created with 4699 embeddings
+2026-02-14 19:03:47,650 - __main__ - INFO - Total cost: $0.00
+2026-02-14 19:03:47,651 - __main__ - INFO - Saved to: C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 19:03:47,651 - __main__ - INFO - Testing query: 'What does Menno recommend for protein intake?'
+2026-02-14 19:03:47,714 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 19:03:55,210 - __main__ - INFO - Testing query: 'How to structure training split for hypertrophy?'
+2026-02-14 19:03:58,154 - __main__ - INFO - Testing query: 'Best exercises for muscle growth?'
+2026-02-14 19:03:59,647 - __main__ - INFO - Testing query: 'Supplements worth taking?'
+2026-02-14 19:04:00,213 - __main__ - INFO - Testing query: 'How much cardio while bulking?'
+2026-02-14 19:04:21,344 - __main__ - INFO - Creating RAG chain
+2026-02-14 19:04:21,344 - __main__ - INFO -   Model: llama3.1:8b
+2026-02-14 19:04:21,345 - __main__ - INFO -   Temperature: 0.3
+2026-02-14 19:04:21,345 - __main__ - INFO -   Retrieval K: 4
+2026-02-14 19:04:21,345 - src.vector_store - INFO - Loading vector store from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\chroma_db
+2026-02-14 19:04:25,501 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 19:04:28,699 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-14 19:04:28,822 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 19:04:28,825 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-14 19:04:28,834 - src.vector_store - INFO - Loaded 4699 embeddings
+2026-02-14 19:04:28,837 - __main__ - INFO - RAG chain ready
+2026-02-14 19:04:28,838 - __main__ - INFO - Question: What does Menno recommend for daily protein intake?
+2026-02-14 19:10:36,660 - __main__ - INFO - Loading and processing PDFs...
+2026-02-14 19:10:36,661 - src.pdf_loader - INFO - Loading PDFs from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\PDFs
+2026-02-14 19:10:36,661 - src.pdf_loader - INFO - Found 35 PDF files
+2026-02-14 19:11:17,154 - src.pdf_loader - INFO - Loaded 2277 pages from 35 PDFs
+2026-02-14 19:11:17,154 - src.pdf_loader - INFO - Splitting documents: chunk_size=1000, overlap=200
+2026-02-14 19:11:17,329 - src.pdf_loader - INFO - Created 4699 chunks
+2026-02-14 19:11:17,332 - __main__ - INFO - Creating FAISS vector store with 4699 chunks
+2026-02-14 19:11:20,933 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 19:16:01,765 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-14 19:16:01,766 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-14 19:16:01,767 - faiss.loader - INFO - Loading faiss.
+2026-02-14 19:16:02,531 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-14 19:17:59,587 - __main__ - INFO - Loading and processing PDFs...
+2026-02-14 19:17:59,587 - src.pdf_loader - INFO - Loading PDFs from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\PDFs
+2026-02-14 19:17:59,588 - src.pdf_loader - INFO - Found 35 PDF files
+2026-02-14 19:20:03,432 - __main__ - INFO - Loading and processing PDFs...
+2026-02-14 19:20:03,432 - src.pdf_loader - INFO - Loading PDFs from C:\Users\barni\OneDrive\Работен плот\Personal Trainer Assistant\PDFs
+2026-02-14 19:20:03,433 - src.pdf_loader - INFO - Found 35 PDF files
+2026-02-14 19:21:04,863 - src.pdf_loader - INFO - Loaded 2277 pages from 35 PDFs
+2026-02-14 19:21:04,864 - src.pdf_loader - INFO - Splitting documents: chunk_size=1000, overlap=200
+2026-02-14 19:21:05,110 - src.pdf_loader - INFO - Created 4699 chunks
+2026-02-14 19:21:05,113 - __main__ - INFO - Creating FAISS vector store with 4699 chunks
+2026-02-14 19:21:05,113 - __main__ - INFO - Cost: $0.00 (100% local)
+2026-02-14 19:21:12,585 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 19:25:25,543 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-14 19:25:25,544 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-14 19:25:25,545 - faiss.loader - INFO - Loading faiss.
+2026-02-14 19:25:25,602 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-14 20:15:34,494 - __main__ - INFO - Loading and processing PDFs...
+2026-02-14 20:15:34,494 - src.pdf_loader - INFO - Loading PDFs from D:\Personal Trainer Assistant\PDFs
+2026-02-14 20:15:34,496 - src.pdf_loader - INFO - Found 35 PDF files
+2026-02-14 20:16:18,344 - src.pdf_loader - INFO - Loaded 2277 pages from 35 PDFs
+2026-02-14 20:16:18,344 - src.pdf_loader - INFO - Splitting documents: chunk_size=1000, overlap=200
+2026-02-14 20:16:18,516 - src.pdf_loader - INFO - Created 4699 chunks
+2026-02-14 20:16:18,519 - __main__ - INFO - Creating FAISS vector store with 4699 chunks
+2026-02-14 20:16:18,519 - __main__ - INFO - Cost: $0.00 (100% local)
+2026-02-14 20:16:33,891 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 20:21:10,691 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-14 20:21:10,692 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-14 20:21:10,692 - faiss.loader - INFO - Loading faiss.
+2026-02-14 20:21:11,146 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-14 20:21:11,401 - __main__ - INFO - FAISS index created with 4699 embeddings
+2026-02-14 20:21:11,401 - __main__ - INFO - Total cost: $0.00
+2026-02-14 20:21:11,402 - __main__ - INFO - Saved to: D:\Personal Trainer Assistant\faiss_index
+2026-02-14 20:21:11,403 - __main__ - INFO - Testing query: 'What does Menno recommend for protein intake?'
+2026-02-14 20:21:11,425 - __main__ - INFO - Testing query: 'How to structure training split for hypertrophy?'
+2026-02-14 20:21:17,076 - __main__ - INFO - Testing query: 'Best exercises for muscle growth?'
+2026-02-14 20:22:20,514 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 20:22:20,514 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 20:22:20,516 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 20:22:20,516 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 20:22:20,517 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-14 20:22:25,500 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 20:22:28,010 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-14 20:22:28,011 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-14 20:22:28,011 - faiss.loader - INFO - Loading faiss.
+2026-02-14 20:22:28,037 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-14 20:24:55,338 - src.rag_chain - INFO - Creating RAG chain
+2026-02-14 20:24:55,339 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-14 20:24:55,339 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-14 20:24:55,339 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-14 20:24:55,339 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-14 20:25:02,116 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-14 20:25:05,116 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-14 20:25:05,116 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-14 20:25:05,118 - faiss.loader - INFO - Loading faiss.
+2026-02-14 20:25:05,141 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-14 20:25:05,184 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-14 20:25:05,188 - src.rag_chain - INFO - RAG chain ready
+2026-02-14 23:42:48,116 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-411' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at D:\Personal Trainer Assistant\venv\Lib\site-packages\tornado\websocket.py:1111> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "D:\Personal Trainer Assistant\venv\Lib\site-packages\tornado\websocket.py", line 1113, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal Trainer Assistant\venv\Lib\site-packages\tornado\websocket.py", line 1115, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+2026-02-15 06:52:25,471 - src.rag_chain - INFO - Creating RAG chain
+2026-02-15 06:52:25,472 - src.rag_chain - INFO -   Model: llama3.1:8b
+2026-02-15 06:52:25,472 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 06:52:25,472 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 06:52:25,472 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 06:52:34,651 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 06:52:37,718 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 06:52:37,719 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 06:52:37,721 - faiss.loader - INFO - Loading faiss.
+2026-02-15 06:52:37,791 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 06:52:38,046 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 06:52:38,052 - src.rag_chain - INFO - RAG chain ready
+2026-02-15 07:11:21,047 - src.rag_chain - INFO - Creating RAG chain
+2026-02-15 07:11:21,048 - src.rag_chain - INFO -   Model: llama3.2:3b
+2026-02-15 07:11:21,050 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 07:11:21,051 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 07:11:21,051 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 07:11:30,309 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 07:11:33,809 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 07:11:33,810 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 07:11:33,812 - faiss.loader - INFO - Loading faiss.
+2026-02-15 07:11:33,878 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 07:11:33,948 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 07:11:33,954 - src.rag_chain - INFO - RAG chain ready
+2026-02-15 07:14:59,337 - src.rag_chain - INFO - Creating RAG chain
+2026-02-15 07:14:59,339 - src.rag_chain - INFO -   Model: llama3.2:3b
+2026-02-15 07:14:59,340 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 07:14:59,341 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 07:14:59,341 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 07:15:07,026 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 07:15:10,251 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 07:15:10,252 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 07:15:10,255 - faiss.loader - INFO - Loading faiss.
+2026-02-15 07:15:10,319 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 07:15:10,536 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 07:15:10,540 - src.rag_chain - INFO - RAG chain ready
+2026-02-15 07:17:50,123 - src.rag_chain - INFO - Creating RAG chain
+2026-02-15 07:17:50,125 - src.rag_chain - INFO -   Model: llama3.2:3b
+2026-02-15 07:17:50,126 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 07:17:50,126 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 07:17:50,126 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 07:17:58,377 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 07:18:01,462 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 07:18:01,463 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 07:18:01,465 - faiss.loader - INFO - Loading faiss.
+2026-02-15 07:18:01,533 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 07:18:01,743 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 07:18:01,747 - src.rag_chain - INFO - RAG chain ready
+2026-02-15 08:11:00,924 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 08:11:00,925 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 08:11:00,926 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 08:11:00,926 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 08:11:00,927 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 08:11:00,927 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 08:11:11,032 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 08:13:29,274 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 08:13:29,274 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 08:13:29,275 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 08:13:29,276 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 08:13:29,276 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 08:13:29,276 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 08:13:31,343 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 08:13:34,312 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 08:13:34,313 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 08:13:34,313 - faiss.loader - INFO - Loading faiss.
+2026-02-15 08:13:34,708 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 08:13:34,776 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 08:15:29,692 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 08:15:29,693 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 08:15:29,694 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 08:15:29,695 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 08:15:29,695 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 08:15:29,696 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 08:15:32,750 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 08:15:36,153 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 08:15:36,154 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 08:15:36,154 - faiss.loader - INFO - Loading faiss.
+2026-02-15 08:15:36,199 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 08:15:36,261 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 08:16:16,823 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 08:16:16,823 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 08:16:16,825 - src.rag_chain - INFO -   Temperature: 0.3
+2026-02-15 08:16:16,825 - src.rag_chain - INFO -   Retrieval K: 4
+2026-02-15 08:16:16,825 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 08:16:16,825 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 08:16:18,852 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 08:16:21,517 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 08:16:21,518 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 08:16:21,519 - faiss.loader - INFO - Loading faiss.
+2026-02-15 08:16:21,547 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 08:16:21,583 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 08:16:46,615 - src.rag_chain - INFO - Question: What is protein?
+2026-02-15 08:16:48,384 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 08:17:30,370 - src.rag_chain - INFO - Question: Can you give me advice? I'm at 25% body fat with bad sleep habits. How should I train and what is the optimal calorie intake for my situation?
+2026-02-15 08:17:31,933 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 08:49:31,885 - src.rag_chain - INFO - Question: I want to reduce my stress
+2026-02-15 08:49:33,161 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 08:50:43,472 - src.rag_chain - INFO - Question: How can I choose best exercises?
+2026-02-15 08:50:44,620 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 09:01:35,328 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 09:01:35,329 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 09:01:35,329 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 09:01:35,330 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 09:01:35,330 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 09:01:35,330 - src.vector_store - INFO - Loading FAISS index from D:\Personal Trainer Assistant\faiss_index
+2026-02-15 09:01:44,745 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 09:01:48,138 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 09:01:48,139 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 09:01:48,139 - faiss.loader - INFO - Loading faiss.
+2026-02-15 09:01:48,541 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 09:01:48,646 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 09:01:57,448 - src.rag_chain - INFO - Question: What is protein?
+2026-02-15 09:01:59,037 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 09:02:43,963 - src.rag_chain - INFO - Question: How much much protein per day is recommended for me. My weight is 73kg?
+2026-02-15 09:02:44,972 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 09:03:03,260 - src.rag_chain - INFO - Question: How can I reduce my stress levels?
+2026-02-15 09:03:04,333 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

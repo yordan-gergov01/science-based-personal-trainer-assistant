@@ -1,0 +1,30 @@
+# Core - Let pip resolve to latest compatible
+langchain
+langchain-community
+langchain-core
+langchain-groq
+langchain-text-splitters
+
+pypdf==3.17.4
+python-dotenv==1.0.0
+streamlit==1.29.0
+
+# Vector Store - FAISS
+faiss-cpu==1.7.4
+
+# FREE Models
+sentence-transformers==2.3.1
+torch==2.1.2
+transformers==4.36.2
+
+# Utils
+requests==2.31.0
+tqdm==4.66.1
+pandas==2.1.4
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Development
+jupyter==1.0.0
+notebook==7.0.6
+ipykernel==6.27.1
