@@ -98,8 +98,6 @@ def ask_question(chain, question, verbose=True):
     
     start_time = time.time()
     
-    if verbose:
-    
     try:
         result = chain.invoke({"query": question})
         
@@ -115,7 +113,7 @@ def ask_question(chain, question, verbose=True):
                 if topic not in topics:
                     topics[topic] = []
                 topics[topic].append(doc)
-            
+        
         # Log query
         log_entry = {
             "timestamp": datetime.now().isoformat(),
@@ -148,7 +146,7 @@ def ask_question(chain, question, verbose=True):
         with open(f"{LOGS_PATH}/queries.jsonl", 'a', encoding='utf-8') as f:
             f.write(json.dumps(log_entry) + '\n')
         
-        raise e
+        return None, []
 
 if __name__ == "__main__":
     

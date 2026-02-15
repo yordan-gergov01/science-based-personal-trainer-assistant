@@ -352,3 +352,76 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
 2026-02-15 09:02:44,972 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-02-15 09:03:03,260 - src.rag_chain - INFO - Question: How can I reduce my stress levels?
 2026-02-15 09:03:04,333 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-15 09:55:48,132 - matplotlib.font_manager - INFO - generated new fontManager
+2026-02-15 10:09:49,477 - src.pdf_loader - INFO - Loading PDFs from d:\Personal Trainer Assistant\notebooks\..\PDFs
+2026-02-15 10:09:49,483 - src.pdf_loader - INFO - Found 35 PDF files
+2026-02-15 10:10:39,969 - src.pdf_loader - INFO - Loaded 2277 pages from 35 PDFs
+2026-02-15 10:13:54,294 - src.pdf_loader - INFO - Splitting documents: chunk_size=1000, overlap=200
+2026-02-15 10:13:54,525 - src.pdf_loader - INFO - Created 4687 chunks
+2026-02-15 10:18:43,769 - src.vector_store - INFO - Loading FAISS index from d:\Personal Trainer Assistant\notebooks\..\faiss_index
+2026-02-15 10:18:44,632 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 10:18:47,712 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 10:18:47,714 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 10:18:47,715 - faiss.loader - INFO - Loading faiss.
+2026-02-15 10:18:47,803 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 10:18:47,850 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 10:35:03,997 - src.vector_store - INFO - Loading FAISS index from d:\Personal Trainer Assistant\notebooks\..\faiss_index
+2026-02-15 10:35:05,132 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 10:35:07,821 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 10:35:07,822 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 10:35:07,823 - faiss.loader - INFO - Loading faiss.
+2026-02-15 10:35:07,902 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 10:35:07,954 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 10:50:14,046 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 10:50:14,047 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 10:50:14,048 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 10:50:14,049 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 10:50:14,049 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 10:50:14,050 - src.vector_store - INFO - Loading FAISS index from d:\Personal Trainer Assistant\notebooks\..\faiss_index
+2026-02-15 10:50:15,176 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 10:50:17,937 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-15 10:50:17,938 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-02-15 10:50:17,938 - faiss.loader - INFO - Loading faiss.
+2026-02-15 10:50:18,020 - faiss.loader - INFO - Successfully loaded faiss.
+2026-02-15 10:50:18,073 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 10:51:34,303 - src.rag_chain - INFO - Question: What's the optimal daily protein intake for muscle growth?
+2026-02-15 10:51:34,809 - src.rag_chain - INFO - Question: How should I structure my training split for hypertrophy?
+2026-02-15 10:51:35,312 - src.rag_chain - INFO - Question: What are the best exercises for chest development?
+2026-02-15 10:51:35,813 - src.rag_chain - INFO - Question: Should I do cardio while bulking and how much?
+2026-02-15 10:51:36,315 - src.rag_chain - INFO - Question: How to prevent common training injuries?
+2026-02-15 10:51:36,816 - src.rag_chain - INFO - Question: Which supplements are actually worth taking?
+2026-02-15 10:51:37,318 - src.rag_chain - INFO - Question: Explain the science of muscle protein synthesis
+2026-02-15 10:51:37,820 - src.rag_chain - INFO - Question: How does sleep affect muscle recovery and growth?
+2026-02-15 10:51:38,322 - src.rag_chain - INFO - Question: What's the difference between powerlifting and bodybuilding training?
+2026-02-15 10:51:38,825 - src.rag_chain - INFO - Question: How do I calculate my maintenance calories?
+2026-02-15 11:01:06,655 - src.rag_chain - INFO - Creating RAG chain with Groq
+2026-02-15 11:01:06,673 - src.rag_chain - INFO -   Model: llama-3.3-70b-versatile
+2026-02-15 11:01:06,675 - src.rag_chain - INFO -   Temperature: 0.1
+2026-02-15 11:01:06,676 - src.rag_chain - INFO -   Retrieval K: 6
+2026-02-15 11:01:06,677 - src.rag_chain - INFO -   Cost per query: $0.00 (FREE)
+2026-02-15 11:01:06,683 - src.vector_store - INFO - Loading FAISS index from d:\Personal Trainer Assistant\notebooks\..\faiss_index
+2026-02-15 11:01:06,719 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-15 11:01:09,866 - src.vector_store - INFO - Loaded 4699 embeddings from FAISS index
+2026-02-15 11:01:22,512 - src.rag_chain - INFO - Question: What's the optimal daily protein intake for muscle growth?
+2026-02-15 11:01:23,016 - src.rag_chain - INFO - Question: How should I structure my training split for hypertrophy?
+2026-02-15 11:01:23,518 - src.rag_chain - INFO - Question: What are the best exercises for chest development?
+2026-02-15 11:01:24,021 - src.rag_chain - INFO - Question: Should I do cardio while bulking and how much?
+2026-02-15 11:01:24,523 - src.rag_chain - INFO - Question: How to prevent common training injuries?
+2026-02-15 11:01:25,026 - src.rag_chain - INFO - Question: Which supplements are actually worth taking?
+2026-02-15 11:01:25,529 - src.rag_chain - INFO - Question: Explain the science of muscle protein synthesis
+2026-02-15 11:01:26,031 - src.rag_chain - INFO - Question: How does sleep affect muscle recovery and growth?
+2026-02-15 11:01:26,536 - src.rag_chain - INFO - Question: What's the difference between powerlifting and bodybuilding training?
+2026-02-15 11:01:27,038 - src.rag_chain - INFO - Question: How do I calculate my maintenance calories?
+2026-02-15 11:03:44,056 - src.rag_chain - INFO - Question: What's the optimal daily protein intake for muscle growth?
+2026-02-15 11:03:44,560 - src.rag_chain - INFO - Question: How should I structure my training split for hypertrophy?
+2026-02-15 11:03:45,064 - src.rag_chain - INFO - Question: What are the best exercises for chest development?
+2026-02-15 11:03:45,569 - src.rag_chain - INFO - Question: Should I do cardio while bulking and how much?
+2026-02-15 11:03:46,073 - src.rag_chain - INFO - Question: How to prevent common training injuries?
+2026-02-15 11:03:46,574 - src.rag_chain - INFO - Question: Which supplements are actually worth taking?
+2026-02-15 11:03:47,078 - src.rag_chain - INFO - Question: Explain the science of muscle protein synthesis
+2026-02-15 11:03:47,583 - src.rag_chain - INFO - Question: How does sleep affect muscle recovery and growth?
+2026-02-15 11:03:48,087 - src.rag_chain - INFO - Question: What's the difference between powerlifting and bodybuilding training?
+2026-02-15 11:03:48,589 - src.rag_chain - INFO - Question: How do I calculate my maintenance calories?
