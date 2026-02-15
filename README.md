@@ -1,6 +1,6 @@
 # Evidence-Based Fitness Coach RAG System
 
-AI-powered fitness coaching system trained on Menno Henselmans' evidence-based methodology. Delivers accurate, science-backed answers through Retrieval-Augmented Generation.
+AI-powered fitness coaching system trained on evidence-based methodology. Delivers accurate, science-backed answers through Retrieval-Augmented Generation.
 
 ## Key Features
 
