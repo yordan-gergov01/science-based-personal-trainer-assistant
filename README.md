@@ -40,7 +40,7 @@ LangChain + FAISS + Sentence Transformers + Groq (Llama 3.3 70B) + Streamlit
 ## Local Setup
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/fitness-coach-rag.git
+git clone https://github.com/yordan-gergov01/science-based-personal-trainer-assistant.git
 cd fitness-coach-rag
 
 # Install dependencies
